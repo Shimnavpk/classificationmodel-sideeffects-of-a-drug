@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Side effect of a Drug</title>
+  <link href="css\styles.css" rel='stylesheet' type='text/css'>
+   <style>
+	body
+.header{
+	
+	width: 100%;
+    height: 300px;   
+    background-color: #17a2b8;
+	 background-image: url(medicine.png);
+	  background-repeat: no-repeat;
+    background-position-x: 30%;
+	background-size: 300px 280px
+}
+.header h1{
+	padding:10% 20%;
+}
+
+.centre{
+	width: 100%;
+   height: 600px;
+   display: flex;
+
+}
+.centreleft{
+	width:30%; 
+	
+}
+
+.centreright{
+	flex-grow: 1; 
+	
+}
+.mainheading {
+    text-align:center;
+	
+}
+.question{
+	margin-top:10%;
+}
+.question label{
+	
+    font-size: 32px;
+    font-weight: bold;
+}
+.question select{
+	margin-left:5px;
+}
+.question button {
+	margin-left :5px;
+}
+.btn { display: inline-block; *display: inline; *zoom: 1; padding: 4px 10px 4px; margin-bottom: 0; font-size: 13px; line-height: 18px; color: #333333; text-align: center;text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); vertical-align: middle; background-color: #f5f5f5; background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6); background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6)); background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6); background-image: -o-linear-gradient(top, #ffffff, #e6e6e6); background-image: linear-gradient(top, #ffffff, #e6e6e6); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=#ffffff, endColorstr=#e6e6e6, GradientType=0); border-color: #e6e6e6 #e6e6e6 #e6e6e6; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border: 1px solid #e6e6e6; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); cursor: pointer; *margin-left: .3em; }
+.btn:hover, .btn:active, .btn.active, .btn.disabled, .btn[disabled] { background-color: #e6e6e6; }
+.btn-large { padding: 9px 14px; font-size: 15px; line-height: normal; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+.btn:hover { color: #333333; text-decoration: none; background-color: #e6e6e6; background-position: 0 -15px; -webkit-transition: background-position 0.1s linear; -moz-transition: background-position 0.1s linear; -ms-transition: background-position 0.1s linear; -o-transition: background-position 0.1s linear; transition: background-position 0.1s linear; }
+.btn-primary, .btn-primary:hover { text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); color: #ffffff; }
+.btn-primary.active { color: rgba(255, 255, 255, 0.75); }
+.btn-primary { background-color: #4a77d4; background-image: -moz-linear-gradient(top, #6eb6de, #4a77d4); background-image: -ms-linear-gradient(top, #6eb6de, #4a77d4); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#6eb6de), to(#4a77d4)); background-image: -webkit-linear-gradient(top, #6eb6de, #4a77d4); background-image: -o-linear-gradient(top, #6eb6de, #4a77d4); background-image: linear-gradient(top, #6eb6de, #4a77d4); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=#6eb6de, endColorstr=#4a77d4, GradientType=0);  border: 1px solid #3762bc; text-shadow: 1px 1px 1px rgba(0,0,0,0.4); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.5); }
+.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] { filter: none; background-color: #4a77d4; }
+.btn-block { width: 100%; display:block; }
+   </style>
+</head>
+<body>
+
+<div class ="header" >
+<h1 class ="mainheading">Side effect of a Drug  Prediction</h1>
+	
+</div>
+
+<div class ="centre ">	
+	<div class="centreleft">
+		
+	</div>
+	<div class="centreright">
+		
+
+		
+			<div  class="input form">
+        <form id="input head">
+          <div>
+          <h1 id="heading">Effectiveness of a Drug</h1>
+                  
+          <br>
+          <h3 id="select">EaseofUse</h23>
+            <select id="ease-of-use-select" name ="EaseofUse">
+              <option name ="a1">1</option>
+              <option name ="a2">2</option>
+              <option name ="a3">3</option>
+              <option name ="a4">4</option>
+              <option name ="a5">5</option>
+            </select>
+            <br>
+			<h3 id="select">Satisfaction</h23>
+				<select id="satisfaction-select" name ="Satisfaction">
+				  <option name ="f1">1</option>
+				  <option name ="f2">2</option>
+				  <option name ="f3">3</option>
+				  <option name ="f4">4</option>
+				  <option name ="f5">5</option>
+				</select>
+				<br>
+			  <h3 id="select">Age</h23>
+				  <select id="age-select" name ="Age">
+					<option  name="1">0-2</option>
+					<option  name ="2">3-6</option>
+					<option  name ="3">7-12</option>
+					<option  name ="4">13-18</option>
+					<option  name ="5">19-24</option>
+					<option  name ="6">25-34</option>
+					<option  name ="7">35-44</option>
+					<option  name ="8">45-54</option>
+					<option  name ="9">55-64</option>
+					<option  name ="10">65-74</option>
+					<option  name ="11">75 or over</option>
+				</select>
+				<br>
+				<h3 id="select">Condition</h23>
+					<select id="condition-select" name ="Condition">
+					  <option name ="V1">Chronic Heart Failure</option>
+					  <option name ="V2">Diastolic Heart Failure</option>
+					  <option name ="V3">Failure of the Left Ventricle of the Heart</option>
+					  <option name ="V4">Heart Attack</option>
+					  <option name ="V5">High Blood Pressure</option>
+					  <option name ="V6">Kidney Disease from Diabetes</option>
+					  <option name ="V7">Kidney Problem caused by Body Tissue Disease-Scleroderma</option>
+					  <option name ="V8">Migraine Prevention</option>
+					  <option name ="V9">Nondiabetic Proteinuric Nephropathy</option>
+					  <option name ="V10">Prevention of Recurrent Atrial Fibrillation</option>
+					  <option name ="V11">Retinal Changes of Eye in a Patient with Diabetes</option>
+					  <option name ="V12">Other</option>
+				  </select>
+				  <br>
+				  <h3 id="select">Sex</h23>
+					<select id="sex-select" name ="Sex">
+					  <option name="C1">Male</option>
+					  <option name ="C2">Female</option>
+					</select>
+					  <br>
+					  <br>
+					  <br>
+				<button id="submit" type="submit">Predict</button>
+				
+					<h1>Result </h1>
+					<div id="result" class="result"></div>
+				 
+			  </div>
+			 
+			  </form>
+			  
+			 
+			</div>
+	</div>
+</div>
+
+			<script>
+				// Event listener for form submission=
+				var color='black';
+				function getPredictionText(value){
+					var newValue=parseInt(value);
+					var retrunString="";
+					if(newValue==1){
+						retrunString="No Side Effects";
+						color="red"
+					}else if(newValue==2){
+						retrunString="Mild Side Effects";
+						color='violet';
+					}else if(newValue==3){
+						retrunString="Moderate Side Effects";
+						color='rgb(128, 0, 34)';
+					}else if(newValue==4){
+						retrunString="Severe Side effects";
+						color="rgb(96, 128, 0)";
+					}else if(newValue==5){
+						retrunString="Extreme side effects";
+						color="blue";
+					}else {
+						retrunString = "nil";
+					}				
+					return retrunString;
+				}
+				document.getElementById("input head").addEventListener("submit", function(event) {
+				  event.preventDefault(); // Prevent the form from submitting normally
+			
+				  // Get form values
+				  var eou = document.getElementById("ease-of-use-select").value;
+				  var satisfaction = document.getElementById("satisfaction-select").value;
+				  var age = document.getElementById("age-select").value;
+				  var condition = document.getElementById("condition-select").value;
+				  var sex = document.getElementById("sex-select").value;
+			
+				  // Create a new XMLHttpRequest object
+				  var xhr = new XMLHttpRequest();
+			
+				  // Set up the request
+				  xhr.open("POST", "http://localhost:8000/predict", true);
+				  xhr.setRequestHeader("Content-Type", "application/json");
+				  xhr.setRequestHeader('Access-Control-Allow-Origin', 'http://localhost:8000');
+				  xhr.setRequestHeader('Access-Control-Allow-Credentials', 'true');
+			
+				  // Define the data to be sent
+				  var data = JSON.stringify({
+					"eou": eou,
+					"satisfaction": satisfaction,
+					"age": age,
+					"condtion": condition,
+					"sex": sex
+				  });
+			
+				  // Define the callback function
+				  xhr.onload = function() {
+					if (xhr.status === 200) {
+					  // Request succeeded
+					 
+					  console.log("Request succeeded:", xhr.responseText);
+					  var response=JSON.parse(xhr.responseText)
+					  var predictionText =getPredictionText(response.y_pred)
+					  var el = document.createElement( 'div' );
+					  el.innerHTML='<h2 style="color:'+color+'";>'+predictionText+'</h2>';
+					  document.getElementById('result').appendChild(el);
+					
+
+					} else {
+					  // Request failed
+					  console.log("Request failed:", xhr.status);
+					}
+				  };
+			
+				  // Send the request
+				  xhr.send(data);
+				});
+			  </script>
+	  </body>
+	  </html>
+
+
+
+			
